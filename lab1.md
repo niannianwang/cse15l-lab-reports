@@ -46,3 +46,4 @@ error: it is an error, a directly cannot be read
 absolute path: `(base) nian-nianwang@Nian-NiandeMacBook-Pro lecture1 % ` <br>
 why: we provided a file and the en-us.txt file was successfully read, returning the string in the text file <br>
 error: not an error
+
