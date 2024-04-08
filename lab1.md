@@ -32,3 +32,17 @@ why: the pathname is a file, `ls` displays the specific file <br>
 error: not an error
 
 ## `cat`
+![Image](cat_none.png) <br>
+absolute path: `(base) nian-nianwang@Nian-NiandeMacBook-Pro lecture1 % ` <br>
+why: without any arguments, it will just return the input string <br>
+error: it is an error, it doesn't read any file
+
+![Image](cat_directory.png) <br>
+absolute path: `(base) nian-nianwang@Nian-NiandeMacBook-Pro lecture1 % ` <br>
+why: we provided a directly instead of a file and the directory cannot be read like a text file <br>
+error: it is an error, a directly cannot be read
+
+![Image](cat_file.png) <br>
+absolute path: `(base) nian-nianwang@Nian-NiandeMacBook-Pro lecture1 % ` <br>
+why: we provided a file and the en-us.txt file was successfully read, returning the string in the text file <br>
+error: not an error
