@@ -1,7 +1,7 @@
 # Lab Report 2
 
 ## Part 1
-ChatServer.java code:
+### 1.1 ChatServer.java code:
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -46,6 +46,6 @@ class ChatServer {
 
 ```
 
-Screenshots of using /add-message:
+### 1.2 Screenshots of using /add-message:
 ![Image](ss1.png) <br>
 ![Image](ss2.png) <br>
