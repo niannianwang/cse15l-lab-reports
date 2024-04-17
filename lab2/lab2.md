@@ -60,7 +60,7 @@ Which methods in your code are called? <br>
 What are the relevant arguments to those methods, and the values of any relevant fields of the class? <br>
 The relevant argument is `url` for the method to extract information from the url. `message` is important to save string information. <br>
 How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
-`message` was updated with the concatenation of the new information provided by a new input to the URL while saving previous input information.
+`message` was updated to concatenate the new information provided by a new input to the URL while saving previous input information.
 
 ## Part 2
 1. ![Image](private.png) <br>
@@ -68,4 +68,4 @@ How do the values of any relevant fields of the class change from this specific 
 3. ![Image](connect_server.png) <br>
 
 ## Part 3
-What we have been doing in lab week 2 and 3 are completely new to me. It was super cool to be how when I hosted a website while connected to the ieng6 server. My partner, who was also connected to the ieng6 server was able to access the web server, increment/add numbers for the website through modifying the url and I was able to see the changes when I refreshed the website later. I noticed how I have always been ignorant to urls where it actually are far more complex than I ever knew and consists a lot of important information.
+What we have been doing in lab week 2 and 3 are completely new to me. It was super cool to be able to host a website while connected to the ieng6 server. My partner, who was also connected to the ieng6 server was able to access the web server, increment/add numbers for the website by modifying the url and I was able to see the changes when I refreshed the website later. I noticed how I have always been ignorant of URLs, but they are far more complex than I ever knew and consist of a lot of important information.
