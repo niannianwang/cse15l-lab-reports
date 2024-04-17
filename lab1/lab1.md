@@ -6,7 +6,7 @@ Why: without any arguments, it sets working directory back to the home directory
 Error: not an error
 
 ![Image](cd_directory.png) <br>
-Absolute path: `(base) nian-nianwang@Nian-NiandeMacBook-Pro ~ %` <br>
+Absolute path: `/Users/nian-nianwang` <br>
 Why: the directory `lecture1` exists under the home directory and directs to `lecture1` <br>
 Error: not an error
 
