@@ -48,17 +48,17 @@ class ChatServer {
 ### 1.2 Screenshots of using /add-message:
 ![Image](ss1.png) <br>
 Which methods in your code are called? <br>
-`handleRequest` was called. <br>
+The `handleRequest` method from the `Handler` class was called. <br>
 What are the relevant arguments to those methods, and the values of any relevant fields of the class? <br>
-The most important argument is `url` for getting the query part of the url. `parameters` was essential to extract user information and message. <br>
+The most important argument is `url` for getting access to the url and be able to extract the query part of the url, which is the section with the information we want to look at. `parameters` was essential to extract user information and message. <br>
 How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why. <br>
 The value is updated for `message` from an empty string to the desired string format with username and message. <br>
 
 ![Image](ss2.png) <br>
 Which methods in your code are called? <br>
-`handleRequest` was called. <br>
+The `handleRequest` method from the `Handler` class was called. <br>
 What are the relevant arguments to those methods, and the values of any relevant fields of the class? <br>
-The relevant argument is `url` for the method to extract information from the url. `message` is important to save string information. <br>
+The relevant argument is similar to the previous step. Similarly, `url` for the method to extract information from the url. `message` is important to save string information. <br>
 How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
 `message` was updated to concatenate the new information provided by a new input to the URL while saving previous input information.
 
