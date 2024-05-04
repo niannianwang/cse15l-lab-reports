@@ -1,6 +1,47 @@
 # Lab Report 3
 ## Part 1 - Bugs
-### 1.1
+### 1.1 & 1.2
+Code:
+```
+public class ArrayExamples { 
+
+  // Changes the input array to be in reversed order
+  static void reverseInPlace(int[] arr) {
+    // for(int i = 0; i < arr.length / 2; i += 1) {
+    //   int toSwap = arr[i];
+    //   arr[i] = arr[arr.length - i - 1];
+    //   arr[arr.length - i - 1] = toSwap;
+    // }
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+}
+```
+
+Failure-inducing Test:
+```
+public class ArrayTests {
+        @Test 
+	public void testReverseInPlace() {
+            int[] input2 = {1, 2, 3};
+            ArrayExamples.reverseInPlace(input2);
+            assertArrayEquals(new int[]{3, 2, 1}, input2);
+	}
+ }
+```
+Passed Test:
+```
+public class ArrayTests {
+	@Test 
+	public void testReverseInPlace() {
+            int[] input1 = { 3 };
+            ArrayExamples.reverseInPlace(input1);
+            assertArrayEquals(new int[]{ 3 }, input1);
+        }
+ }
+```
+
 Error Message:
 ``` (base) nian-nianwang@Nian-NiandeMBP lab3 % javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 (base) nian-nianwang@Nian-NiandeMBP lab3 % java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ArrayTests
