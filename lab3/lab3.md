@@ -1,24 +1,6 @@
 # Lab Report 3
 ## Part 1 - Bugs
 ### 1.1 & 1.2
-Code:
-```
-public class ArrayExamples { 
-
-  // Changes the input array to be in reversed order
-  static void reverseInPlace(int[] arr) {
-    // for(int i = 0; i < arr.length / 2; i += 1) {
-    //   int toSwap = arr[i];
-    //   arr[i] = arr[arr.length - i - 1];
-    //   arr[arr.length - i - 1] = toSwap;
-    // }
-    for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = arr[arr.length - i - 1];
-    }
-  }
-}
-```
-
 Failure-inducing Test:
 ```
 public class ArrayTests {
@@ -70,3 +52,33 @@ Caused by: java.lang.AssertionError: expected:<1> but was:<3>
 
 FAILURES!!!
 Tests run: 2,  Failures: 1 ```
+
+### 1.4 Code
+Buggy Code:
+```
+public class ArrayExamples { 
+
+  // Changes the input array to be in reversed order
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+}
+```
+
+Fixed Code:
+```
+public class ArrayExamples { 
+
+  // Changes the input array to be in reversed order
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length / 2; i += 1) {
+      int toSwap = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length - i - 1] = toSwap;
+    }
+  }
+}
+```
+
