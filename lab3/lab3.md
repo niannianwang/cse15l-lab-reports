@@ -52,6 +52,7 @@ Caused by: java.lang.AssertionError: expected:<1> but was:<3>
 
 FAILURES!!!
 Tests run: 2,  Failures: 1 ```
+```
 
 ### 1.4 Code
 Buggy Code:
@@ -82,3 +83,9 @@ public class ArrayExamples {
 }
 ```
 
+### 1.5
+The fixed code loops through half of the Array. This loop is designed to only iterate through half of the array because when swapping elements to reverse the array, we only need to go halfway to avoid re-reversing elements. 
+
+Within the loop, it stores the value of the element at index `i` in a variable named `toSwap`. It assigns the value of the element at index `arr.length - i - 1`, which corresponds to the position of the element in the array that is symmetrically opposite to the element at index `i`, to the element at index i. The element at index `arr.length - i - 1` is then assigned to the value `toSwap`, which was the original value of the element at index `i`.
+
+This fixed code effectively swaps the first half of the array with the second half.
