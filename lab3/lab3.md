@@ -89,3 +89,54 @@ The fixed code loops through half of the Array. This loop is designed to only it
 Within the loop, it stores the value of the element at index `i` in a variable named `toSwap`. It assigns the value of the element at index `arr.length - i - 1`, which corresponds to the position of the element in the array that is symmetrically opposite to the element at index `i`, to the element at index i. The element at index `arr.length - i - 1` is then assigned to the value `toSwap`, which was the original value of the element at index `i`.
 
 This fixed code effectively swaps the first half of the array with the second half.
+
+## Part 2 - `grep` Command Research
+
+1. `-i`
+**Command:**
+```
+grep -i research technical/biomed/*.txt
+```
+
+**Output:**
+```
+technical/biomed/1472-6874-2-13.txt:        the primary products of research [ 8 9 ] . Figure 1, though
+technical/biomed/1472-6874-2-13.txt:          Endocrine Research Laboratory. The analyses for E 
+technical/biomed/1472-6874-2-13.txt:        typical purposes of epidemiological research because the
+technical/biomed/1472-6874-2-13.txt:        results of typical epidemiological research center on
+technical/biomed/1472-6874-2-13.txt:        researchers' capacity to control. For example, the validity
+technical/biomed/1472-6874-2-13.txt:        useful for designing future research projects exploring the
+technical/biomed/1472-6874-2-13.txt:        from the Cancer Center Support grant to the Cancer Research
+technical/biomed/1472-6882-1-10.txt:        hunting success. During the research some hunters claimed
+technical/biomed/1472-6882-1-10.txt:          The research area is located in Guayaguayare on
+technical/biomed/1472-6882-1-10.txt:          conducted research with one group of seven hunters based
+technical/biomed/1472-6882-1-10.txt:          mixed race. This research included participant
+technical/biomed/1472-6882-1-10.txt:          to hunters (and researchers) which may explain some of
+technical/biomed/1472-6882-1-10.txt:          their bush medicine remedies. One research hazard was the
+...
+```
+
+**Function:**
+In this example, using `-i` ignores the text files in `biomed` that does not contain the word `research` and outputs the files and texts where `research` appears. This is really useful for what we normally do command+f when looking through web pages and files.
+
+
+**Command:**
+```
+grep -i police technical/911report/*.txt
+```
+
+**Output:**
+```
+technical/911report/chapter-1.txt:    At 8:52, in Easton, Connecticut, a man named Lee Hanson received a phone call from his son Peter, a passenger on United 175. His son told him: "I think they've taken over the cockpit-An attendant has been stabbed- and someone else up front may have been killed. The plane is making strange moves. Call United Airlines-Tell them it's Flight 175, Boston to LA." Lee Hanson then called the Easton Police Department and relayed what he had heard.
+technical/911report/chapter-1.txt:    Shortly after 9:00, Indianapolis Center started notifying other agencies that American 77 was missing and had possibly crashed. At 9:08, Indianapolis Center asked Air Force Search and Rescue at Langley Air Force Base to look for a downed aircraft. The center also contacted the West Virginia State Police and asked whether any reports of a downed aircraft had been received. At 9:09, it reported the loss of contact to the FAA regional center, which passed this information to FAA headquarters at 9:24.
+technical/911report/chapter-10.txt:                of a military police lead vehicle and a van; the proposed briefing theater had no
+technical/911report/chapter-11.txt:                officials-local airport managers and local police departments- who had not seen such
+technical/911report/chapter-11.txt:                concerned citizens. Representatives of the Justice Department, the FAA, local police
+technical/911report/chapter-12.txt:                violent extremism. According to Karachi's police commander, there are 859 madrassahs
+technical/911report/chapter-12.txt:            The country's vast unpoliced regions make Pakistan attractive to extremists seeking
+technical/911report/chapter-12.txt:                with al Qaeda. Saudi police are regularly being killed in shootouts with terrorists.
+...
+```
+
+**Function:**
+This will be useful for people who would like to research particularly on police involvement in 911 as the command searches for where police appears in the text files about 911report. They don't have to scroll through all files but can quickly query the areas where the information they want may be.
