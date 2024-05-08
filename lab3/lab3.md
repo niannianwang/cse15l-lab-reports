@@ -57,6 +57,7 @@ Caused by: java.lang.AssertionError: expected:<1> but was:<3>
 FAILURES!!!
 Tests run: 2,  Failures: 1 ```
 ```
+![Image](test_output.png)
 
 ### 1.4 Code
 
