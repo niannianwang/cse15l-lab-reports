@@ -93,6 +93,9 @@ This fixed code effectively swaps the first half of the array with the second ha
 ## Part 2 - `grep` Command Research
 
 1. `-i`
+**Source:**
+https://docs.rackspace.com/docs/use-the-linux-grep-command
+
 **Command:**
 ```
 grep -i research technical/biomed/*.txt
@@ -117,8 +120,7 @@ technical/biomed/1472-6882-1-10.txt:          their bush medicine remedies. One 
 ```
 
 **Function:**
-In this example, using `-i` ignores the text files in `biomed` that does not contain the word `research` and outputs the files and texts where `research` appears. This is really useful for what we normally do command+f when looking through web pages and files.
-
+In this example, using `-i` ignores the text files and texts in `biomed` that does not contain the word `research` and displays all the files and lines where `research` appears. This is really useful for what we normally do command+f when looking through web pages and files, but case case insensitive.
 
 **Command:**
 ```
@@ -138,5 +140,34 @@ technical/911report/chapter-12.txt:                with al Qaeda. Saudi police a
 ...
 ```
 
+2. `-E`
+
 **Function:**
 This will be useful for people who would like to research particularly on police involvement in 911 as the command searches for where police appears in the text files about 911report. They don't have to scroll through all files but can quickly query the areas where the information they want may be.
+
+**Input:**
+```
+grep -E "[0-9]" technical/biomed/*.txt
+```
+
+**Output:**
+```
+technical/biomed/rr172.txt:        4 hours in minimal Eagle's medium with Earle's salts to
+technical/biomed/rr172.txt:        consisted of untreated controls, treatment with 50 ng/ml
+technical/biomed/rr172.txt:        TNF-α and treatment with 0.4 μg/ml CSC. After treatments,
+technical/biomed/rr172.txt:        from the wells and centrifuged 1 min at 12,000 × 
+technical/biomed/rr172.txt:        g. Aliquots of 20 μl of each lysate
+technical/biomed/rr172.txt:        to moderate doses of CSC by activating both the ERK1/2 and
+technical/biomed/rr172.txt:        kinase; MEK-1 = MAPK kinase; NFκB = nuclear factor-kappa B;
+technical/biomed/rr191.txt:        hyperinsulinemic [ 1 ] . An increased incidence of neonatal
+technical/biomed/rr191.txt:        infants of diabetic mothers [ 1 ] . RDS is caused by
+technical/biomed/rr191.txt:        lung development [ 2 ] . It has been proposed that high
+technical/biomed/rr191.txt:        the diabetic mother [ 3 ] .
+technical/biomed/rr191.txt:        (~80%), cholesterol (~10%), and proteins (~10%), functions
+technical/biomed/rr191.txt:        end expiration [ 4 ] . The surfactant-associated proteins
+technical/biomed/rr191.txt:        regulated [ 4 ] . We, and others, have shown that the SP-A
+technical/biomed/rr191.txt:        significantly decreased [ 1 ] . Low SP-A levels in amniotic
+technical/biomed/rr191.txt:        neonatal RDS [ 5 ] . Our previous studies have shown that
+technical/biomed/rr191.txt:        transcription [ 6 7 ] .
+...
+```
