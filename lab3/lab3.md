@@ -145,7 +145,6 @@ technical/911report/chapter-12.txt:                with al Qaeda. Saudi police a
 This will be useful for people who would like to research particularly on police involvement in 911 as the command searches for where police appears in the text files about 911report. They don't have to scroll through all files but can quickly query the areas where the information they want may be.
 
 ### 2. `-E`
-
 **Source:**
 https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
@@ -209,7 +208,6 @@ technical/government/About_LSC/diversity_priorities.txt:influx of immigrants. Th
 I was expecting there to be documentation about improving diversity in government documents. This is more case sensitive than when using `-i` to use regular expressions to find places where "women" is exactly mentioned. From the extracted text, I can already have a brief idea of the government having the idea of being more inclusive and diverse.
 
 ### 3. `-A`
-
 **Source:**
 https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
@@ -268,7 +266,6 @@ technical/911report/chapter-8.txt-                told us that no connection to 
 This identifies sections an passages within the text files that are directly related to the keyword. Very useful for extracting context around lines containing the keyword "CIA" from multiple text files and having a gist of the research findings and records behind the scenes. 
 
 ### 4. `-v`
-
 **Source:**
 https://docs.rackspace.com/docs/use-the-linux-grep-command
 
