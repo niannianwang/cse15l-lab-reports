@@ -270,6 +270,7 @@ This identifies sections an passages within the text files that are directly rel
 
 **Source:**
 https://docs.rackspace.com/docs/use-the-linux-grep-command
+
 **Input:**
 
 ```
