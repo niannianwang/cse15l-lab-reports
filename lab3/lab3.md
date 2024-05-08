@@ -1,6 +1,7 @@
 # Lab Report 3
 ## Part 1 - Bugs
 ### 1.1 & 1.2
+
 Failure-inducing Test:
 ```
 public class ArrayTests {
@@ -25,6 +26,7 @@ public class ArrayTests {
 ```
 
 ### 1.3 Output
+
 Error Message:
 ```
 (base) nian-nianwang@Nian-NiandeMBP lab3 % javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
@@ -56,6 +58,7 @@ Tests run: 2,  Failures: 1 ```
 ```
 
 ### 1.4 Code
+
 Buggy Code:
 ```
 public class ArrayExamples { 
@@ -85,6 +88,7 @@ public class ArrayExamples {
 ```
 
 ### 1.5
+
 The fixed code loops through half of the Array. This loop is designed to only iterate through half of the array because when swapping elements to reverse the array, we only need to go halfway to avoid re-reversing elements. 
 
 Within the loop, it stores the value of the element at index `i` in a variable named `toSwap`. It assigns the value of the element at index `arr.length - i - 1`, which corresponds to the position of the element in the array that is symmetrically opposite to the element at index `i`, to the element at index i. The element at index `arr.length - i - 1` is then assigned to the value `toSwap`, which was the original value of the element at index `i`.
@@ -94,6 +98,7 @@ This fixed code effectively swaps the first half of the array with the second ha
 ## Part 2 - `grep` Command Research
 
 ### 1. `-i`
+
 **Source:**
 https://docs.rackspace.com/docs/use-the-linux-grep-command
 
@@ -145,6 +150,7 @@ technical/911report/chapter-12.txt:                with al Qaeda. Saudi police a
 This will be useful for people who would like to research particularly on police involvement in 911 as the command searches for where police appears in the text files about 911report. They don't have to scroll through all files but can quickly query the areas where the information they want may be.
 
 ### 2. `-E`
+
 **Source:**
 https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
@@ -208,6 +214,7 @@ technical/government/About_LSC/diversity_priorities.txt:influx of immigrants. Th
 I was expecting there to be documentation about improving diversity in government documents. This is more case sensitive than when using `-i` to use regular expressions to find places where "women" is exactly mentioned. From the extracted text, I can already have a brief idea of the government having the idea of being more inclusive and diverse.
 
 ### 3. `-A`
+
 **Source:**
 https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
@@ -266,6 +273,7 @@ technical/911report/chapter-8.txt-                told us that no connection to 
 This identifies sections an passages within the text files that are directly related to the keyword. Very useful for extracting context around lines containing the keyword "CIA" from multiple text files and having a gist of the research findings and records behind the scenes. 
 
 ### 4. `-v`
+
 **Source:**
 https://docs.rackspace.com/docs/use-the-linux-grep-command
 
