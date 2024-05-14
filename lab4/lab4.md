@@ -8,6 +8,6 @@
 7. edit code (search): pressed `n` 9 times I was not sure where the index1 I needed to fix was, so I pressed `n` to go through all the `index1`s one by one.
 8. edit code (search): pressed `<right>` 5 times
 9. edit code (search): typed `r2` This was for replacing 1 to 2 with my cursor on top of `1` for `index1`. In this way, I don't need to go into insert mode and save some key presses.  ![Image](vim_r.png)
-10. edit code (search): `:wq` + <enter> This was to save and quit. ![Image](vim_wq.png)
+10. edit code (search): `:wq` + `<enter>` This was to save and quit. ![Image](vim_wq.png)
 11. run test: `<up>` two times in terminal history to get to the previous time I ran `bash test.sh` ![Image](success_test.png)
 12. git: `git status` + `<enter>`, `git add .` + `<enter>`, `git commit -m "fixed bug"` + `<enter>`, `git push` + `<enter>` standard git process to push updates on github ![Image](push.png)
