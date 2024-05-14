@@ -5,3 +5,5 @@ hello world
 [Lab Report 2](https://niannianwang.github.io/cse15l-lab-reports/lab2/lab2.html)
 
 [Lab Report 3](https://niannianwang.github.io/cse15l-lab-reports/lab3/lab3.html)
+
+[Lab Report 4](https://niannianwang.github.io/cse15l-lab-reports/lab4/lab4.html)
